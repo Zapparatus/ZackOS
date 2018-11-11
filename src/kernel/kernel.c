@@ -44,10 +44,9 @@ static int timer = 0;
 
 void ProcessTimer(void)
 {
-    terminal_writestring("Timer Reached\n");
-
-    if (timer > 10)
+    if (timer > 18)
     {
+        terminal_writestring("Timer Reached\n");
         timer = 0;
     }
 
