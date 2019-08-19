@@ -2,9 +2,9 @@ linker_script := src/linker.ld
 CFLAGS= -c -I ../../include -std=gnu99 -ffreestanding -O2 -Wall -Wextra
 LDFLAGS=-T $(linker_script) -I include -ffreestanding -O2 -nostdlib -lgcc
 qemu-system-i386=../qemu/qemu-system-i386.exe
-i686-elf-bin=../ghost-i686-elf-tools/bin
-i686-elf-gcc=$(i686-elf-bin)/i686-elf-gcc.exe
-i686-elf-as=$(i686-elf-bin)/i686-elf-as.exe
+i686-elf-bin=../i686-elf-4.9.1-Linux-x86_64/bin
+i686-elf-gcc=$(i686-elf-bin)/i686-elf-gcc
+i686-elf-as=$(i686-elf-bin)/i686-elf-as
 nasm=../nasm-2.13.03/nasm.exe
 bin=build/osdev.bin
 iso=build/osdev.iso
